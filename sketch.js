@@ -62,6 +62,19 @@ a=a+0.2;
 Matter.Body.setAngle(maze.body,a);
 
 } 
+if(touches.length>0)
+{
+	if(key1.body.position!=null)
+		{
+			if(key1.body.position.x>windowWidth/2-10 && key1.body.position.x<windowWidth/2+20)
+			{
+				
+				gameState="end";
+				touches=[];
+			}
+		}
+}
+
 }
 else if(gameState=="end")
 {
@@ -78,13 +91,6 @@ else if(gameState=="end")
   {
 	if(keyIsDown(UP_ARROW)){
 		
-		if(key1.body.position!=null)
-		{
-			if(key1.body.position.x>windowWidth/2-10 && key1.body.position.x<windowWidth/2+20)
-			{
-				
-				gameState="end";
-			}
-		}
+		
 	}
   }
