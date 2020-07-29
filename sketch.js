@@ -72,6 +72,10 @@ if(touches.length>0)
 				gameState="end";
 				touches=[];
 			}
+			else
+			{
+				touches=[];
+			}
 		}
 }
 
